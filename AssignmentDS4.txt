@@ -1,0 +1,126 @@
+NAME : AVUYILE
+SURNAME : VUZA
+STUDENT NUMBER :217243673
+SUBJECT: DEVELOPMENT SOFTWARE 4
+
+
+
+
+PYTHON
+def input_length():
+    length = int(input("Enter the length : "))
+    return length
+
+
+def input_width():
+    width = int(input("Enter the width : "))
+    return width
+
+
+def calc_Area(length,width):
+    area = length * width
+    return area
+
+
+def calc_Peri(length,width):
+    peri = 2*(length+width)
+    return peri
+
+
+if __name__ == '__main__':
+    length = input_length()
+    width= input_width()
+    area = calc_Area(length, width)
+    peri = calc_Peri(length, width)
+    print("The area of a rectangle is : ", area,)
+    print("The perimeter of a rectangle is : ", peri,)
+
+C#
+using System;
+
+namespace ConsoleApp
+{
+    class AreaPeri
+    {
+        static int input_length()
+        {
+            Console.WriteLine("Enter the length : ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            return length;
+        }
+        static int input_width()
+        {
+            Console.WriteLine("Enter the width : ");
+            int width = Convert.ToInt32(Console.ReadLine());
+            return width;
+        }
+        static int calc_Area(int length,int width)
+        {
+            int area;
+            area = length * width;
+            return area;
+        }
+        static int calc_Peri(int length, int width)
+        {
+            int peri;
+            peri = 2 * (length + width);
+            return width;
+        }
+
+    
+        static void Main(string[] args)
+        {
+            int length = input_length();
+            int width = input_width();
+            int area = calc_Area(length, width);
+            int peri = calc_Peri(length,width);
+            Console.WriteLine("The area of a rectangle is :" + area);
+            Console.WriteLine("The perimeter of a rectangle is : " + peri);
+        }
+    }
+}
+
+
+JAVA
+
+package areaperi;
+import java.util.Scanner;
+public class AreaPeri {
+    static int input_length(){
+    System.out.println("Enter the length : ");
+    Scanner Console = new Scanner(System.in);
+    int length = Console.nextInt();
+    return length;
+    }
+    
+    static int input_width(){
+    System.out.println("Enter the width : ");
+    Scanner Console = new Scanner(System.in);
+    int width = Console.nextInt();
+    return width;
+    }
+    
+    static int calc_Area(int length,int width){
+        int area;
+        area = length * width;
+        return area;
+    }
+    static int calc_Peri(int length,int width){
+        int peri;
+        peri = 2*(length + width);
+        return peri;
+    }
+      
+    public static void main(String[] args) {
+        int length = input_length();
+        int width = input_width();
+        int area = calc_Area(length,width);
+        int peri = calc_Peri(length,width);
+        System.out.println("The area of a rectangle is : " +area);
+        System.out.println("The perimeter of rectangle is : " + peri);
+        
+    }
+    
+}
+
+

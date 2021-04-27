@@ -1,0 +1,47 @@
+NAME :AVUYILE
+SURNAME :VUZA
+STUDENT NUMBER :217243673
+  JAVA
+
+import java.util.Scanner;
+public class Recta {
+    int length;
+    int width;
+    int area;
+    int peri;
+    
+    public Recta(int clength,int cwidth){
+    length = clength;
+    width = cwidth;
+}
+ public void input_attributes() {
+     Scanner Console = new Scanner(System.in);
+     System.out.println("\nEnter the length : ");
+     length = Console.nextInt();
+     System.out.println("Enter the width : "); 
+     width = Console.nextInt();
+ }
+ public int calc_Area(int length,int width){
+     area = length * width;
+     return area;
+ }
+ public int calc_perimeter(int length,int width){
+     peri = 2*(length + width);
+     return peri;
+ }
+ public void output_result(){
+     System.out.println("The area of a rectangle is : " + calc_Area(length,width));
+     System.out.println("The perimeter of a recatngle is :" + calc_perimeter(length,width));
+ } 
+     
+ }
+
+public class NewMain {
+  public static void main(String[]args){
+      Recta s1 = new Recta(20,10);
+      s1.input_attributes();
+      s1.output_result();
+      
+      
+  }
+}
